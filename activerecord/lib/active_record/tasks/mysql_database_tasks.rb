@@ -44,6 +44,7 @@ module ActiveRecord
         args.concat(["--no-data"])
         args.concat(["--routines"])
         args.concat(["--skip-comments"])
+        args.concat(["--single-transaction"])
 
         ignore_tables = ActiveRecord::SchemaDumper.ignore_tables
         if ignore_tables.any?
